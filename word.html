@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<title>끝말잇기</title>
+<script>
+    //끝말잇기
+    
+    
+    var word = '곰돌이'  //첫 제시어 저장
+    while (true) {     //참일때 반복
+        var newWord = prompt(word);  //두번째 제시어 저장
+        if (word[word.length - 1] === newWord[0]) {  //첫번째 제시어의 길이에서 1을 뺀 값(마지막글자)이 두번째 제시어의 첫번째 글자와 일치
+            word = newWord; //맞다면 두번째 제시어 = 첫번째 제시어
+        } else {
+            alert('다시 해 보세요.') //틀리다면 '틀렸습니다' 출력
+        }
+    }
+</script>
+</head>
+<body>
+   
+
+</body>
+</html>
